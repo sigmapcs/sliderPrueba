@@ -2,12 +2,68 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <meta name="description" content="descripcion del sitio"/>
+    <meta name="author" content="Sigma PCS contacto@sigmapcs.com.mx"/>
+    <meta name="keywords"/>
+    <meta name="robots" content="index,follow"/>
+    <meta property="og:site_name" content="nombre del sitio"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="www.misitio.com"/>
+    <meta property="og:title"/>
+    <meta property="og:description"/>
+    <meta property="og:image" content="www.misitio.com"/>
+    <title>Inicio | Titulo del sitio</title>
+    <link rel="canonical" href="http://tunabranding.mx/sitio/"/>
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
-  <body>
-    <h1>Slaider</h1>
+  <body class="body inicio" itemscope="itemscope" itemtype="http://schema.org/LocalBusiness">
+    <header class="main-header" id="main-header">
+      <div class="container">
+        <div class="main-header__logo"><img src="img/logo-let.png" alt="main logo"/>
+        </div>
+        <div class="main-header__menu">
+          <div class="toggle-menu" id="main-nav-toggle"></div>
+          <nav class="main-nav" id="main-nav">
+            <ul class="main-menu" id="main-menu">
+              <li class="main-menu__item"><a class="main-menu__link menu-selected" href="/">inicio</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="nosotros.html">nosotros</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="servicios.html">servicios</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="galeria.html">galeria</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="contacto.html">contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="banner" id="banner">
+    </section>
+    <main class="main" id="main">
+    </main>
+    <aside></aside>
+    <footer class="main-footer" id="main-footer">
+      <div class="container">
+        <div class="main-footer__copy">
+          <p>&copy;<span id="year"></span></p>
+          <h1>Titulo del sitio</h1>
+        </div>
+        <div class="main-footer__dev">
+          <p>Desarrollado por:<a href="http://sigmapcs.com.mx" target="_blank">Sigma PCS</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.min.js?ver=1.0.2"></script>
+    <script src="js/scripts.js?ver=1.0.2"></script>
+    <script>
+      edgrid.menu('main-nav','main-menu')
+      $(".fancybox").fancybox({
+        openEffect: 'elastic',
+        closeEffect: 'fade',
+        maxWidth: 800
+      });
+    </script>
   </body>
 </html>

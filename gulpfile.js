@@ -57,14 +57,14 @@ const
         mJS: 'scripts.min.js',
         JS:[
             // `${dir.dev}/assets/js/blank.js`
-            `${dir.nm}/jquery/dist/jquery.js`,
-            `${dir.dev}/assets/js/jquery.slides.js`,
+            // `${dir.nm}/jquery/dist/jquery.js`,
+            // `${dir.dev}/assets/js/jquery.slides.js`,
             // `${dir.nm}/shufflejs/dist/shuffle.min.js`,
             `${dir.dev}/assets/js/ed-grid.js`,
             // `${dir.nm}/nivo-slider/jquery.nivo.slider.pack.js`
             // `${dir.dev}/assets/js/jquery.slides.js`,
             // `${dir.dev}/assets/js/owl.carousel.js`,
-            `${dir.dev}/assets/js/jquery.fancybox.js`
+            // `${dir.dev}/assets/js/jquery.fancybox.js`
             // `${dir.nm}/wowjs/dist/wow.min.js`
         ]
     },
