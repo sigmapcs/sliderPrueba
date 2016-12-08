@@ -1,0 +1,9 @@
+.fancybox-wrap{
+  position: absolute !important;
+  z-index: 1100 !important;
+  //background: red !important;
+}
+.fancybox-overlay {
+  background: rgba(#000,.75);
+  z-index: 1000;
+}

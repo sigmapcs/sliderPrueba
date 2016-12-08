@@ -1,0 +1,39 @@
+$bp-menu: l;
+.main-menu{
+  @include edMenu($bp-menu);
+  &__item{
+    @include to($bp-menu){
+      border-bottom: 1px solid rgba($white,.1);
+    }
+    transition: $transition;
+    &:hover{
+      background: rgba(#000,.1);
+    }
+  }
+  &__link{
+    color: $white;
+    text-transform: uppercase;
+
+
+  }
+}
+.main-nav{
+  @include edNav(right,$bp-menu);
+  @include from($bp-menu){
+    width: 80%;
+  }
+  @include to($bp-menu){
+    background: darken($main-color,3);
+    align-self: stretch;
+    margin-top: 3rem;
+  }
+}
+.toggle-menu{
+  @include navToggle(25px,$white);
+  @include showTo($bp-menu);
+  @include mainCenter();
+  @include crossCenter();
+}
+.menu-selected{
+  background: rgba(#000,.1);
+}

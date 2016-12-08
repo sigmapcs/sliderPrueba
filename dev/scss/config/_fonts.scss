@@ -1,0 +1,95 @@
+// icon-fonts
+@import 'https://file.myfontastic.com/dukkMftkPuyx2goc3yNZhR/icons.css';
+
+//Tipo de fuentes generales ** desactive las que no  necesite para mayor dendimiento
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+$open-sans:'Open Sans', sans-serif;
+////
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700';
+$oswald : 'Oswald', sans-serif;
+//
+//@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+//$montserrat : 'Montserrat', sans-serif;
+//
+//@import 'http://fonts.googleapis.com/css?family=Nunito:400,300,700,800';
+//$nunito : 'Nunito', arial;
+
+//@import 'http://fonts.googleapis.com/css?family=Titillium+Web:400,700italic,700,600italic,400italic';
+//$titillium: 'Titillium', arial;
+
+
+//@import 'https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900';
+//$orbitron: 'Orbitron', arial;
+//
+//@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
+//$roboto-condensed : 'Roboto Condensed', sans-serif;
+//
+//@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,700';
+//$ubuntu : 'Ubuntu', sans-serif;
+//
+//@import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700';
+//$noto : 'Noto Sans', sans-serif;
+
+//@import 'https://fonts.googleapis.com/css?family=Ubuntu+Condensed';
+//$ubuntu-condensed: 'Ubuntu Condensed', sans-serif;
+
+//@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
+//$josefin-sans: 'Josefin Sans', sans-serif;
+//
+//@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+//$varela: 'Varela Round', sans-serif;
+
+$main-font   : $open-sans;
+//$second-font: $ubuntu-condensed;
+$header-font : $oswald;
+
+$light      : 300;
+$normal     : 400;
+$bold       : 700;
+
+//@font-face {
+//  font-family: 'FontAwesome';
+//  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+//  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//.fa {
+//  display: inline-block;
+//  font: normal normal normal 14px/1 FontAwesome;
+//  font-size: inherit;
+//  text-rendering: auto;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+//.fa-spin {
+//  -webkit-animation: fa-spin 2s infinite linear;
+//  animation: fa-spin 2s infinite linear;
+//}
+//.fa-pulse {
+//  -webkit-animation: fa-spin 1s infinite steps(8);
+//  animation: fa-spin 1s infinite steps(8);
+//}
+//@-webkit-keyframes fa-spin {
+//  0% {
+//    -webkit-transform: rotate(0deg);
+//    transform: rotate(0deg);
+//  }
+//  100% {
+//    -webkit-transform: rotate(359deg);
+//    transform: rotate(359deg);
+//  }
+//}
+//@keyframes fa-spin {
+//  0% {
+//    -webkit-transform: rotate(0deg);
+//    transform: rotate(0deg);
+//  }
+//  100% {
+//    -webkit-transform: rotate(359deg);
+//    transform: rotate(359deg);
+//  }
+//}
+//.fa-spinner:before {
+//  content: "\f110";
+//}

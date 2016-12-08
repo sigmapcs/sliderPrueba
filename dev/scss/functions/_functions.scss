@@ -1,0 +1,42 @@
+@function em($el,$parent:16px){
+  @return ($el / $parent) * 1em;
+}
+
+@function rem($el){
+  @return ($el / 16px) * 1rem;
+}
+@function img($image){
+  @return url('../img/' + $image);
+}
+
+@function text3d($numero,$color){
+  $text-shadow: 2px 2px $color;
+  @for $i from 1 through $numero {
+    $text-shadow: '#{$text-shadow},
+         #{$i}px #{$i}px #{$color}';
+  }
+  @return unquote($text-shadow);
+}
+
+@function box3d($numero,$color){
+  $box-shadow: 2px 2px $color;
+  @for $i from 1 through $numero {
+    $box-shadow: '#{$box-shadow},
+         #{$i}px #{$i}px #{$color}';
+  }
+  @return unquote($box-shadow);
+}
+
+@function border($color,$ancho){
+  @return $ancho solid $color;
+}
+@function shadow($unit,$color){
+  @return $unit $unit $unit $color;
+}
+@function img($name){
+  @return url(../img/#{$name});
+}
+@function color($name){
+  $color: map-get($social-colors,$name);
+  @return $color;
+}

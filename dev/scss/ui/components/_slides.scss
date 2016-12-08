@@ -1,0 +1,75 @@
+.slides{
+  @include edItem(100);
+  display: none;
+  position: relative;
+  //width: 100%;
+  z-index: 1;
+  //border-radius: 2em;
+  //box-shadow: 0 0 10px  #444;
+  a:hover{
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    width : 100%;
+    height    : auto;
+  }
+}
+.slidesjs-navigation{
+  $size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: $size;
+  width: $size;
+  line-height: $size;
+  text-align: center;
+  background: rgba(#000,.5);
+  //border: 1px solid $dark-gray;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 50%;
+  text-shadow: text3d(2,$black);
+  opacity: .5;
+  transition: $transition;
+  z-index: 2000;
+  &:hover{
+    opacity: 1;
+  }
+  &::before{
+    position: relative;
+    top: 3px !important;
+  }
+}
+.slidesjs-previous{
+  left: 1em;
+  &::before{
+    left: -3px;
+  }
+}
+.slidesjs-next{
+  right: 1em;
+  &::before{
+    left: 2px;
+  }
+}
+.slidesjs-pagination{
+  @extend %list-style;
+  position: absolute;
+  z-index: 1000;
+  bottom: $gutter;
+  display: flex;
+  right: $gutter*2;
+  a{
+    margin: 0 .5em;
+    color: #FFFFFF;
+    text-shadow: text3d(1,rgba(#000,.5));
+    &::before{
+      position: relative;
+      top: 0 !important;
+    }
+  }
+  @include to(m){
+    transform: scale(.8);
+  }
+}

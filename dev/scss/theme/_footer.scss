@@ -1,0 +1,56 @@
+.main-footer{
+  margin-top: auto;
+  min-height: 3rem;
+  background: $main-color;
+  & > .container{
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    color: $second-color;
+    font-size: .9em;
+    display: inline;
+  }
+  h1{
+    display: inline;
+    font-size: .9em;
+    font-family: $main-font;
+    background: transparent;
+    color: $second-color;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+  &__copy{
+    @include edItem(100,50);
+    text-align: center;
+    margin: 0;
+    align-items: flex-start;
+    span{
+      margin: 0 5px;
+    }
+
+    @include from(m){
+      text-align: left;
+    }
+  }
+  &__dev{
+    @include edItem(100,50);
+    text-align: center;
+    margin: 0;
+    align-items: flex-start;
+    a{
+      margin-left: 5px;
+      color: $second-color;
+      transition: $transition;
+      &:hover{
+        color: darken($second-color,30);
+      }
+    }
+    @include from(m){
+      text-align: right;
+    }
+  }
+}

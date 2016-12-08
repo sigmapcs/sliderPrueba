@@ -1,0 +1,46 @@
+include ../functions/mixins
+block config
+  include ../config/variables
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content=description)
+    meta(name="author", content=author)
+    meta(name="keywords", content=keywords)
+    meta(name="robots", content="index,follow")
+    meta(property="og:site_name" content=sitename)
+    meta(property='og:type', content='website')
+    meta(property='og:url', content=urlsite)
+    meta(property='og:title', content=titulo)
+    meta(property='og:description', content=descripcion)
+    meta(property='og:image', content=urlsite)
+    title= `${page} | ${title}`
+    link(rel="canonical" href="http://tunabranding.mx/sitio/")
+    link(rel="icon", href="img/favicon.png")
+    link(rel="stylesheet", href="css/styles.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+    //- script(src="js/analytics.js")
+  body(itemscope itemtype="http://schema.org/LocalBusiness", class=`body ${currentpage}`)
+    header.main-header#main-header
+      include ../blocks/header
+    section.banner#banner
+      block banner
+    main.main#main
+      block main
+    aside
+      include ../blocks/aside
+    footer.main-footer#main-footer
+      include ../blocks/footer
+    script(src="js/scripts.min.js?ver=1.0.2")
+    script(src="js/scripts.js?ver=1.0.2")
+    script.
+      edgrid.menu('main-nav','main-menu')
+      $(".fancybox").fancybox({
+        openEffect: 'elastic',
+        closeEffect: 'fade',
+        maxWidth: 800
+      });
+

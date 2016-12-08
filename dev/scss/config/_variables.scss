@@ -1,0 +1,44 @@
+
+// COLORES MENU
+$menu-bg: transparent;
+$menu-bg-hover: darken($menu-bg,10);
+$menu-color-a: $second-color;
+$menu-color-a-hover: $second-color;
+$menu-text-transform: uppercase;
+$menu-border: none;
+$menu-height: 3rem;
+
+// VARIABLES EXTRAS
+$transition: all .3s;
+$gutter: 1em;
+$border-main: none;
+$border: 1px solid rgba(#fff,.1);
+
+// ESTILOS BASE
+$body--background  : $bg-color;                      // fondo para el body
+$body--font-family : $main-font;   // fuente predeterminada
+$body--color       : $fonts-color;                      // color de texto predeterminado
+
+// ESTILOS DE ENCABEZADOS
+$header--font-family    : $header-font;  // fuente para los headers (h1,h2,h3...)
+$header--font-weight    : $bold;                    // grosor de fuente para los headers
+$header--text-transform : normal;                   // normal, uppercase, lowercase, capitalize
+$header--color          : $headers-color;                     // color predeterminado de los header
+$header--bg-color       : $header-bg;
+
+// TAMAÑO DE LOS ENCABEZADOS (h1...h6)
+$h1--font-size : 2em;
+$h2--font-size : 1.6em;
+$h3--font-size : 1.3em;
+$h4--font-size : 1em;
+$h5--font-size : .9em;
+$h6--font-size : .8em;
+
+// ESTIILOS DE ENLACES
+$link--color : initial;  // color para los enlaces
+
+// ESTILOS DE PÁRRAFOS
+$p--font-size   : 1em;        // Tamaño de fuente
+$p--line-height : 1.5;        // Altura de línea
+$p--margin      : 1em;        // Separación entre un párrafo y el siguiente
+$p--font-weight : $normal;    // Grosor predeterminado de la fuente

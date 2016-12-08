@@ -1,0 +1,16 @@
+mixin pic(name, ext, clase, alt)
+  picture(class=clase)
+    source(srcset=`img/webp/${name}.webp`, type="image/webp" alt=alt)
+    img(src=`img/${name}.${ext}`,alt=alt)
+
+mixin img-resp(name,ext)
+  picture
+    source(srcset=`img/${name}.jpg`, media="(orientation: landscape)")
+    source(img=`img/${name}-portrait.jpg`)
+    img(src=`img/${name}-portrait.jpg`, alt="slider")
+
+mixin img(name,ext,ialt)
+  img(src=`img/${name}.${ext}`,alt=ialt)
+
+mixin svg(name,alt)
+  img(src=`img/svg/${name}.svg`,alt=alt)

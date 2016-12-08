@@ -1,0 +1,24 @@
+.main-header{
+  background: $main-color;
+  &__logo{
+    height: 3rem;
+    @include edItem(70,70,30);
+    @include crossCenter;
+    & > img{
+      max-height: 2.5em;
+    }
+  }
+  &__menu{
+    @include edItem(30,30,70);
+    @include mainEnd;
+    @include crossCenter;
+  }
+}
+
+.toggle-menu{
+
+}
+.container{
+  //background: red;
+  //outline: border(yellow,2px);
+}
