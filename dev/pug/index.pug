@@ -3,3 +3,14 @@ append config
   -currentpage = "inicio"
   -page = "Inicio"
 block main
+  .container
+    artitle.section-wrapper.item
+      ul.section-menu
+        -for(var i = 1; i<=4; i++)
+          li: a(href="#") section #{i}
+      section.section
+        -for(var j = 1; j<=4; j++)
+          div(class=`section__tab section${j}`)
+            h2 Section #{j}
+            +img(`slider${j}`,'jpg',`section ${j}`)
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis consectetur quibusdam, odit saepe a aliquid aperiam nihil quod dolore totam amet quos, sunt sint ab in quia! Omnis, facilis, assumenda.

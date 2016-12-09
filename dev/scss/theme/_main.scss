@@ -1,74 +1,9 @@
-.banner{
-  margin-top: $gutter;
-  .slides{
-    @include edItem(100);
-  }
-}
-.gallery{
-  margin-top: $gutter;
-}
-.gallery-container{
-  //@include edItem(100);
-  @include grid('.gallery-item',1,3,4,4,2em);
-  margin: 0;
-  padding: 0;
-}
-.gallery-item{
-  padding: 5px;
-  border: border($dark-gray,1px);
-  @include button($white,#000, radius );
-  a{
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border: border($dark-gray,1px);
-    //border-radius: .5em;
-    &::after{
-      content: '\69';
-      font-family: "framework";
-      font-size: 1.5em;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(#000,.75);
-      color: $white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: $transition;
-      opacity: 0;
-      z-index: 10;
-    }
-    &:hover{
-      //transform: scale(1.2) rotate(-10deg);
-      &::after{
-        opacity: 1;
-      }
-      img{
-        position: relative;
-        z-index: 1;
-        transform: scale(1.4) rotate(-10deg);
-        filter: grayscale(75%);
-      }
-    }
-    img{
-      display: block;
-      transition: $transition;
-    }
-  }
-}
+.section-wrapper{
 
-.contact{
-  margin-bottom: 2em;
-}
-.form{
-  @include edItem(100);
-}
 
-.form{
-  @include formAndroidStyle($main-color,$dark-gray,.5em);
-  @include edItem(100,50);
 }
-
+.section-menu{
+  @extend %list-style;
+  display: flex;
+  background: $gray;
+}
